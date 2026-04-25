@@ -112,8 +112,7 @@ class _AuditScreenState extends State<AuditScreen>
 
     try {
       final response = await http.post(
-        // Remember to change this to your Render URL for production!
-        Uri.parse('http://127.0.0.1:8000/api/audit'), 
+        Uri.parse('https://domaudit-api.onrender.com/api/audit'), 
         headers: {'Content-Type': 'application/json'},
         body: jsonEncode({'html_snippet': _htmlController.text}),
       );
