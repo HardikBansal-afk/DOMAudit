@@ -4,6 +4,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from google import genai
+import os
 
 app = FastAPI(title="DOMAudit-AI Production API (Gemini Powered)")
 
@@ -16,11 +17,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# --- 1. Cloud API Setup ---
-# REPLACE THIS WITH YOUR GEMINI API KEY
-API_KEY = "AIzaSyChgJko2Z6oERfi7achMbQ1iBPQft_D6Cc" 
+API_KEY = os.environ.get("GEMINI_API_KEY")
 client = genai.Client(api_key=API_KEY)
-
 # --- 2. Data Models ---
 class AuditRequest(BaseModel):
     html_snippet: str
