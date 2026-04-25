@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+venv/
+.env
+
+# Large Model Files (Project Astra Research)
+model_training/dom_auditor_model/
+*.pt
+*.safetensors
+
+# Flutter
+build/
+.dart_tool/
