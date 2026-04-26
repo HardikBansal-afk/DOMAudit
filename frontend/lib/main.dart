@@ -689,7 +689,7 @@ class _InputPanel extends StatelessWidget {
               Icon(Icons.lock_outline_rounded, size: 12, color: _Palette.textMuted.withOpacity(0.5)),
               const SizedBox(width: 6),
               Text(
-                'Processed locally via 127.0.0.1:8000',
+                'Processed securely via Render Cloud',
                 style: GoogleFonts.jetBrainsMono(
                   fontSize: 10,
                   color: _Palette.textMuted.withOpacity(0.4),
