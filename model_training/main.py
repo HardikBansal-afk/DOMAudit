@@ -17,6 +17,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# --- 1. Cloud API Setup ---
+# REPLACE THIS WITH YOUR GEMINI API KEY
 API_KEY = os.environ.get("GEMINI_API_KEY")
 client = genai.Client(api_key=API_KEY)
 # --- 2. Data Models ---
