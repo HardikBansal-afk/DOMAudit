@@ -43,20 +43,6 @@ Instead of telling developers *what’s wrong*, it shows them:
 
 ---
 
-## 🧬 Project Astra Integration
-
-This system is built upon the **Project Astra** framework, focusing on:
-
-- 🧠 Reasoning-first AI systems  
-- 🔁 Knowledge distillation (Teacher → Student models)  
-- ⚡ Latency-optimized inference pipelines  
-
-Instead of naïve prompting, DOMAudit-AI uses:
-> **Structured reasoning + constraint-guided outputs**  
-to ensure patches are **valid, minimal, and production-safe**
-
----
-
 ## ✨ Core Features
 
 ### 🔍 Semantic DOM Auditing
